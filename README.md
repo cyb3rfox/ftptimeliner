@@ -8,7 +8,7 @@ We currently work on a small case, where a custom made CMS gets breached regular
 
 - The script needs `mlsd` command to work. That should not be a problem on most modern FTP servers.
 - RFC3695 (https://datatracker.ietf.org/doc/html/draft-ietf-ftpext-mlst-16.txt) states the following:
-  `Implementation Note: Implementors of this fact on UNIX(TM) systems should note that the unix "stat" "st_ctime" field does not give creation time, and that unix file systems do not record creation time at all.  Unix (and POSIX) implementations will normally not include this fact.`
+  > Implementation Note: Implementors of this fact on UNIX(TM) systems should note that the unix "stat" "st_ctime"  field does not give creation time, and that unix file systems do not record creation time at all.  Unix (and P OSIX) implementations will normally not include this fact.`
   For that reason we are limited to the last modification timestamp. That will usually be enough though.
 
 ## Usage
